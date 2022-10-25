@@ -3,7 +3,7 @@ package com.oop.assignment1;
 public class countWords {
 
 	public static void main(String[] args) {
-		int n = 3;
+		int n = 5;
 		int matrix[][] = new int[n][n];
 		int i = 0;
 		int j = n / 2;
