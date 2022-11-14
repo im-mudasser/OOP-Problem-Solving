@@ -4,7 +4,7 @@ public class ParkingTicketSimulator {
 
 	public static void main(String[] args) {
 
-		ParkedCar car = new ParkedCar("Black", "Honda", "City 2018", "ABZ00987", 20);
+		ParkedCar car = new ParkedCar("Black", "Honda", "City 2018", "ABZ00987", 240);
 		ParkingMeter meter = new ParkingMeter(60); // parking time that has been purchased by car
 		PoliceOfficer officer = new PoliceOfficer("mudasser", "098887");
 		ParkingTicket ticket = officer.writeTicket(car, meter);

@@ -1,9 +1,9 @@
 package com.oop.assignment4;
 
 public class Array {
-	public int arr[];
-	public int size;
-	public int newArray[];
+	private int arr[];
+	private int size;
+	private int newArray[];
 
 	public Array() {
 
@@ -19,7 +19,9 @@ public class Array {
 
 	}
 
-	public Array(Array arr) {
+	public Array(Array arrTobeCopy) {
+		this.arr = arrTobeCopy.arr;
+
 	}
 
 	int getAt(int i) {
@@ -169,8 +171,28 @@ public class Array {
 
 	}
 
-	int sort() {
-		return 0;
+	boolean sort() {
+		boolean flag = false;
+		for (int i = 0; i < arr.length - 1; i++) {
+			flag = false;
+			int j = 0;
+			for (j = 0; j < arr.length - i - 1; j++) {
+
+				if (arr[j] > arr[j + 1]) {
+					int temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+
+				} else {
+					flag = true; // bcz already sort
+
+					continue;
+
+				}
+			}
+
+		}
+		return flag;
 	}
 
 	void reverse() {
@@ -182,6 +204,15 @@ public class Array {
 
 			j--;
 		}
+	}
+
+	// getter
+	public int[] getArray() {
+		return arr;
+	}
+
+	public int getsize() {
+		return size;
 	}
 
 }

@@ -19,6 +19,7 @@ public class ParkingTicket {
 		if (expireCarTime <= 60) {
 			fine = BASE_FINE;
 		} else {
+			expireCarTime -= 60;
 			fine = 25 + (expireCarTime / 60) * HOURLY_FINE;
 		}
 

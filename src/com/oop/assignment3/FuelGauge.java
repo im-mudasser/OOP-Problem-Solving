@@ -28,7 +28,7 @@ public class FuelGauge {
 			System.out.println(e);
 			System.exit(0);
 		} catch (NullPointerException e) {
-			System.out.println(e);
+			System.out.println(e.getMessage());
 			System.exit(0);
 		}
 
