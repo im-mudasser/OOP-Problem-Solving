@@ -15,7 +15,6 @@ public class wordSeperator {
 			ch = str.charAt(i);
 			if (Character.isUpperCase(ch)) {
 				if (i != 0) {
-
 					ch = Character.toLowerCase(ch);
 					newStr = newStr + " " + ch;
 					continue;

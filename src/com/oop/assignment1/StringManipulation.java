@@ -4,13 +4,9 @@ public class StringManipulation {
 
 	public static void main(String[] args) {
 
-		String str = "my name is ";
+		String str = "my name is mudasser";
 		String strReplacedWith = "mudasser";
 		String strToBeReplaced = "shahzad";
-
-		// System.out.println(strLen(str));
-		// upperToLowerCase(str);
-		// lowertoUpperCase(str);
 		replaceWth(str, strToBeReplaced, strReplacedWith);
 	}
 
@@ -69,7 +65,6 @@ public class StringManipulation {
 				found = true;
 				words[i] = strToBeReplaced;
 			} else {
-				System.out.println(found);
 				found = false;
 
 			}
